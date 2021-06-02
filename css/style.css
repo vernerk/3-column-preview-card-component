@@ -151,48 +151,38 @@ width: 64px;
     color: hsl(179, 100%, 13%);
 }
 
+.attribution {
+    color: hsl(179, 100%, 13%);
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    animation-name: attrFadeIn;
+    animation-duration: .3s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+
+.attribution a {
+    color: #2eb3c4;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    border-bottom: 1px solid #2eb3c4;
+}
+
 /* media queries */
-
-  @media screen and (max-width: 600px) {
-
-
-    main {
-        height: 100%;
-        flex-direction: column;
-        position: inherit;
-        transform: unset;
-        margin: 100px auto;
-        max-width: 375px;
-    }
-
-    .category {
-        height: auto;
-    }
-
-    .category p {
-        margin-bottom: 2.3rem;
-    }
-
-    .category:first-child {
-        border-radius: 8px 8px 0 0;
-    }
-  
-    .category:last-child {
-      border-radius: 0 0 8px 8px;
-  }
-
-  .attribution {
-    visibility: hidden;
-}
-
-}
 
 @media screen and (min-width: 601px) and (max-width: 850px) {
 
+
     main {
-        height: 100vh;
-        margin: 100px auto;
+        height: auto;
+        /* margin: 100px auto; */
         flex-direction: column;
+        width: 75%;
     }
 
     .category {
@@ -221,34 +211,50 @@ width: 64px;
   }
 
   .attribution {
-      visibility: hidden;
+      display: none;
   }
+
+
+}
+
+
+  @media screen and (max-width: 600px) {
+
+    main {
+        height: 100%;
+        flex-direction: column;
+        position: inherit;
+        transform: unset;
+        margin: 100px auto;
+        max-width: 375px;
+    }
+
+    .category {
+        height: auto;
+    }
+
+    .category p {
+        margin-bottom: 2.3rem;
+    }
+
+    .category:first-child {
+        border-radius: 8px 8px 0 0;
+    }
+  
+    .category:last-child {
+      border-radius: 0 0 8px 8px;
+  }
+
+  .attribution {
+    display: none;
+}
+
 
 }
 
 /* Attribution styles */
 
-.attribution {
-    color: hsl(179, 100%, 13%);
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    width: 100%;
-    font-size: 1.2rem;
-    animation-name: attrFadeIn;
-    animation-duration: .3s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-}
 
-.attribution a {
-    color: #2eb3c4;
-    text-decoration: none;
-}
-
-.attribution a:hover {
-    border-bottom: 1px solid #2eb3c4;
-}
 
 @keyframes attrFadeIn {
     0% {
