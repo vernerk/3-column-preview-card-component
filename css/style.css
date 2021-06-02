@@ -87,6 +87,7 @@
       color: hsl(31, 77%, 52%);;
   }
 
+<<<<<<< Updated upstream
   .suv {
       background-color: hsl(184, 100%, 22%);
   }
@@ -102,5 +103,66 @@
   .luxury a {
       color: hsl(179, 100%, 13%);
   }
+=======
+    main {
+        height: 100%;
+        flex-direction: column;
+        position: inherit;
+        transform: unset;
+        margin: 100px auto;
+        max-width: 375px;
+    }
+
+    .category {
+        height: auto;
+    }
+
+    .category p {
+        margin-bottom: 2.3rem;
+    }
+
+    .category:first-child {
+        border-radius: 8px 8px 0 0;
+    }
   
+    .category:last-child {
+      border-radius: 0 0 8px 8px;
+  }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 850px) {
+
+    main {
+        height: 100%;
+        margin: 100px auto;
+        flex-direction: column;
+    }
+
+    .category {
+        height: auto;
+        min-height: 300px;
+        padding: 4.7rem 5.2rem 4rem 4.8rem;
+    }
+
+    .cateory img {
+        float: left;
+        position: relative;
+    }
+
+    h2 {
+        display: inline-block;
+        position: absolute;
+        margin-left: 8rem;
+    }
+
+    .category:first-child {
+        border-radius: 8px 8px 0 0;
+    }
+>>>>>>> Stashed changes
   
+    .category:last-child {
+      border-radius: 0 0 8px 8px;
+  }
+
+}
