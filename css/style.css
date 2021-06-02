@@ -65,6 +65,7 @@
     text-align: center;
     text-decoration: none;
     background-color: #fff;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 1.7rem 3rem;
     border-radius: 100px;
