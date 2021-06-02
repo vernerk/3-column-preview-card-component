@@ -62,6 +62,7 @@
 
 .category a {
     margin-top: auto;
+    text-align: center;
     text-decoration: none;
     background-color: #fff;
     width: fit-content;
