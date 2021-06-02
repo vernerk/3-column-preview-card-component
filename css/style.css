@@ -28,6 +28,13 @@
     width: 90%;
     max-width: 920px;
     height: 500px;
+
+    animation-name: fadeIn;
+    animation-delay: .4s;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+
   }
 
   h2 {
@@ -91,6 +98,33 @@
 
 .category img {
 width: 64px;
+}
+
+.category > * {
+    animation-name: fadeIn;
+    animation-delay: .9s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+.animation-1 > * {
+    animation-delay: 1.3s;
+}
+
+.animation-2 > * {
+    animation-delay: 1.7s;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .sedan {
@@ -183,40 +217,7 @@ width: 64px;
 
 }
 
-/* Animations */
 
-main {
-    animation-name: fadeIn;
-    animation-delay: .4s;
-    animation-duration: .7s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: backwards;
-} 
-
-.category > * {
-    animation-name: fadeIn;
-    animation-delay: .9s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;
-}
-
-.animation-1 > * {
-    animation-delay: 1.3s;
-}
-
-.animation-2 > * {
-    animation-delay: 1.7s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 /* Attribution styles */
 
