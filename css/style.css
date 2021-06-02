@@ -235,6 +235,10 @@ main {
     text-decoration: none;
 }
 
+.attribution a:hover {
+    border-bottom: 1px solid #2eb3c4;
+}
+
 @keyframes attrFadeIn {
     0% {
         opacity: 0;
