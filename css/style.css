@@ -182,10 +182,17 @@ width: 64px;
 
 /* Animations */
 
+main {
+    animation-name: fadeIn;
+    animation-delay: .1s;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+} 
 
 .category > * {
     animation-name: fadeIn;
-    animation-delay: .5s;
+    animation-delay: .4s;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
@@ -200,6 +207,35 @@ width: 64px;
 }
 
 @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Attribution styles */
+
+.attribution {
+    color: hsl(179, 100%, 13%);
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    animation-name: attrFadeIn;
+    animation-duration: .3s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+
+.attribution a {
+    color: #2eb3c4;
+    text-decoration: none;
+}
+
+@keyframes attrFadeIn {
     0% {
         opacity: 0;
     }
