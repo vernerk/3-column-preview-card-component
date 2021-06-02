@@ -180,7 +180,9 @@ width: 64px;
 
     main {
         height: auto;
-        /* margin: 100px auto; */
+        position: inherit;
+        transform: unset;
+        margin: 100px auto;
         flex-direction: column;
         width: 75%;
     }
